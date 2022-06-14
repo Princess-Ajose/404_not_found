@@ -1,120 +1,146 @@
-*{
+* {
    margin: 0;
    padding: 0;
 }
-body{
-   /* width: 100; */
+
+body {
    height: 100vh;
 }
-nav{
+
+/* navigation */
+nav {
    min-height: 13vh;
 }
-nav #h1{
+
+nav #h1 {
    font-size: 24px;
-   font-family: 'Gill Sans',sans-serif;
+   text-transform: uppercase;
+   font-family: 'Gill Sans', sans-serif;
    font-weight: 700;
-   padding: 2rem 4rem;
+   padding: 2rem 5.5rem;
    color: #333333;
-   
+
 }
-.flex{
+
+/* navigation */
+
+/* The flex aspect  */
+.flex {
    flex-direction: row;
 }
-.container .flex{
+
+.container .flex {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin: 0 7rem;
-   padding-top: 4rem;
-   height: 100vh;
+   margin: 1rem 6rem;
+   padding: 2rem 4rem
 }
-.container img{
- width: 50%;
- margin: 2rem 5rem;
 
-}
-.container .flex .text{
+.container img {
    width: 50%;
-   margin: 1rem 5rem;
+   margin: 2rem 3rem;
 
 }
-.container .flex .text h1{
-   font-size: 50px;
+
+.container .flex .text {
+   width: 50%;
+   margin: 2rem 5rem;
+
+}
+
+.container .flex .text h1 {
+   font-size: 53px;
    font-weight: 700;
    font-family: Arial, Helvetica, sans-serif;
 }
-.container .flex .text p{
-   margin:2.5rem 0;
-   font-size: 19px;
+
+.container .flex .text p {
+   margin: 2rem 0;
+   font-size: 15px;
    font-family: sans-serif;
    font-weight: 300;
 
 }
 
-.container .flex .text button{
-   margin: 2.7rem 0;
+.container .flex .text button {
+   margin: 3rem .5rem;
    color: white;
    background-color: black;
    padding: 1.8rem 3.3rem;
    font-size: 13px;
+   cursor: pointer;
 }
 
-body footer{
-   margin: 20px  ;
+/* The flex aspect  */
+
+/* the footer */
+body footer {
+   margin: 20px;
    text-align: center;
    font-size: 15px;
    font-weight: 500;
    font-style: normal;
-   width: auto;
-   min-height: auto;
    color: #BDBDBD;
 
 }
-body footer strong{
+
+body footer strong {
    text-decoration: underline;
    cursor: pointer;
    color: #BDBDBD
 }
 
-@media only screen and  (max-width:750px){
-
- .flex{
-   flex-direction: column;
-   /* display: flex; */
-   width: 100%;
+/* the footer */
 
 
- }
- .container .flex{
-  align-items:center;
-  width: 100vw;
-  height: 100vh;
+/* media query   the mobile view */
 
- }
- .container .flex .text{
-   width: 100%;
-   flex-direction: column;
- }
-   
-} 
+@media only screen and (max-width:600px) {
 
-@media only screen and  (max-width:520px){
- .flex{
-   flex-direction: column;
-   width: 100%;
+
+   .flex {
+      flex-direction: column;
 
 
    }
-   .container .flex{
-   width: 100vw;
-   height: 100vh;
+
+   .container .flex {
+      align-items: center;
+      width: 100%;
+
 
    }
-   .container .flex .text{
-   width: 100%;
-   flex-direction: column;
+
+   .container .flex .text {
+      align-items: center;
+      width: 100%;
    }
-   
+
+}
+
+/* media query   the mobile view */
+
+@media only screen and (max-width:750px) {
+
+   /*  */
+   .flex {
+      flex-direction: column;
+   }
+
+   .container .flex img {
+      align-items: center;
+      width: 100%;
+
+   }
+
+   .container .flex .text {
+      width: 100%;
+      align-items: center;
+   }
+
 
 
 }
+
+/* END OF MEDIA QUERY AND CODE */
